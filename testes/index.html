@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Texted - External API test</title>
+</head>
+
+<body>
+  <h1>Testing the External API
+  </h1>
+
+  <textarea name="text" id="text" cols="30" rows="10">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec dolor rhoncus, tempus ante sed, iaculis justo. Proin ornare ex et est rutrum, sed suscipit lorem pulvinar. Morbi et libero urna. Praesent nisl mi, tempus ut est auctor, ornare vehicula augue. Nullam maximus dui velit, et consectetur massa ullamcorper fringilla. In hac habitasse platea dictumst. Donec condimentum dolor vitae urna ornare ultrices. Nunc blandit odio non metus facilisis mattis. Fusce varius dapibus tortor sed mattis. Vestibulum tempor nisl a interdum blandit. Vivamus vel tellus dignissim, lobortis sapien ac, faucibus odio. Duis mauris urna, gravida in justo ac, tempor venenatis elit. Duis aliquam dignissim tortor, sit amet condimentum eros molestie vitae. Integer eu eros bibendum, commodo orci ut, consequat leo. Curabitur vel metus fringilla augue sodales venenatis.
+
+    
+
+  </textarea>
+
+  <ul id="ulData"></ul>
+  <script>
+
+
+
+    let text = 'The word logorrhoea is often used pejoratively to describe prose that is highly abstract and contains little concrete language.'
+
+
+    const token = 'k68DvkvZEOnUYOIasAEU4g7Pi7XqKz3JdlVr9uzR';
+    const baseURL = 'https://onesimpleapi.com/api/readability';
+    const URL = `${baseURL}?token=${token}&output=json&text=${text}`;
+
+    async function fecthData(URL, text) {
+      const response = await fetch(URL + text);
+      const json = await response.json();
+      await listData(json);
+      console.log(json);
+    }
+
+    function listData(json) {
+      const ul = document.querySelector('#ulData');
+      ul.innerHTML = JSON.stringify(json);
+    }
+
+    const text2 = document.querySelector('#text').value;
+    // console.log(text2);
+
+
+    // console.log(URL + text)
+
+    fecthData(URL, text2);
+
+
+
+  </script>
+
+
+
+
+</body>
+
+</html>
