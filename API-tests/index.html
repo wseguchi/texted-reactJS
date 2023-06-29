@@ -26,29 +26,49 @@
     let text = 'The word logorrhoea is often used pejoratively to describe prose that is highly abstract and contains little concrete language.'
 
 
-    const token = 'k68DvkvZEOnUYOIasAEU4g7Pi7XqKz3JdlVr9uzR';
-    const baseURL = 'https://onesimpleapi.com/api/readability';
-    const URL = `${baseURL}?token=${token}&output=json&text=${text}`;
+    // const token = 'k68DvkvZEOnUYOIasAEU4g7Pi7XqKz3JdlVr9uzR';
+    // const baseURL = 'https://onesimpleapi.com/api/readability';
+    // const URL = `${baseURL}?token=${token}&output=json&text=${text}`;
 
-    async function fecthData(URL, text) {
-      const response = await fetch(URL + text);
-      const json = await response.json();
-      await listData(json);
-      console.log(json);
-    }
+    // console.log(baseURL + token)
 
-    function listData(json) {
-      const ul = document.querySelector('#ulData');
-      ul.innerHTML = JSON.stringify(json);
-    }
+    // async function fecthData(URL, text) {
+    //   const response = await fetch(URL + text);
+    //   const json = await response.json();
+    //   await listData(json);
+    //   console.log(json);
+    // }
 
-    const text2 = document.querySelector('#text').value;
-    // console.log(text2);
+    fetch('https://onesimpleapi.com/api/readability?token=k68DvkvZEOnUYOIasAEU4g7Pi7XqKz3JdlVr9uzR/POST', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: text
+    })
+      .then(response => response.json())
+      .then(response => console.log(JSON.stringify(response)))
 
 
-    // console.log(URL + text)
 
-    fecthData(URL, text2);
+
+
+
+
+
+    // function listData(json) {
+    //   const ul = document.querySelector('#ulData');
+    //   ul.innerHTML = JSON.stringify(json);
+    // }
+
+    // const text2 = document.querySelector('#text').value;
+    // // console.log(text2);
+
+
+    // // console.log(URL + text)
+
+    // // fecthData(URL, text2);
 
 
 
