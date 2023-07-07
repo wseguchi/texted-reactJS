@@ -53,12 +53,21 @@ button {
   width: 96%;
   max-width: 1200px;
 }
+
 .light-white {
   color: #d8c9f7;
 }
 
 .strong-purple {
   color: #4d1cb0;
+}
+
+.ed-strong {
+  color: #f3b43f;
+}
+
+.ed-green {
+  color: #00fbff;
 }
 
 .btn-green {
