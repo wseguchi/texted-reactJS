@@ -30,3 +30,11 @@ button {
   font-family: 'Poppins', sans-serif;
   letter-spacing: 1.5px;
 }
+
+#container {
+  background-color: aliceblue;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
