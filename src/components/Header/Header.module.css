@@ -1,13 +1,17 @@
 .header {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   align-items: center;
   text-align: center;
   background-image: linear-gradient(#44189a, #6426dd);
+  padding-bottom: 3rem;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
 }
 
 nav {
   display: flex;
-  padding: 10px 5%;
+  padding: 10px 0;
   color: white;
   justify-content: space-between;
   align-items: center;
@@ -47,4 +51,49 @@ nav {
   background-color: white;
   color: #6426dd;
   text-transform: uppercase;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  gap: 4rem;
+  padding: 1rem 0;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+
+.heroIcon {
+  position: relative;
+  top: 1px;
+}
+
+.heroImage {
+  padding-right: 2rem;
+}
+
+.heroImage img {
+  width: 80%;
+}
+
+.heroBgCircle img {
+  position: absolute;
+  width: 30%;
+  z-index: 1;
+  top: 25%;
+  left: -12%;
+}
+
+@media screen and (max-width: 1600px) {
+  .heroBgCircle img {
+    top: 35%;
+  }
 }

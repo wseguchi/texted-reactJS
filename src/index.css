@@ -16,6 +16,14 @@ body {
   font-weight: 300;
 }
 
+img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
 p {
   margin: 20px 0px;
   text-align: justify;
@@ -37,4 +45,43 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+}
+
+/* global classes */
+
+.width-restrainer {
+  width: 96%;
+  max-width: 1200px;
+}
+.light-white {
+  color: #d8c9f7;
+}
+
+.strong-purple {
+  color: #4d1cb0;
+}
+
+.btn-green {
+  width: 150px;
+  background-color: #00dadc;
+  z-index: 2;
+  text-transform: uppercase;
+  color: #404040;
+}
+
+.btn-green:hover {
+  background-color: #00fbff;
+}
+
+.btn-yellow {
+  min-width: 150px;
+  background-color: #f3b43f;
+  color: #404040;
+  padding: 15px 30px;
+  text-transform: uppercase;
+}
+
+.btn-yellow:hover {
+  background-color: #00fbff;
 }

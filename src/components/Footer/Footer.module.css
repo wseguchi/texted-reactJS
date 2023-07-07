@@ -1,13 +1,18 @@
 .footer {
-  display: flex;
-  justify-content: space-between;
   width: 100%;
+  display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: space-around;
   color: #d8c9f7;
   background-image: linear-gradient(#6426dd, #44189a);
   padding: 3.5rem 2rem 1.5rem 2rem;
-  clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footerLogo {
