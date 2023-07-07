@@ -1,2 +1,32 @@
 .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.cardsMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+
+.cardsMain h1 {
+  color: #fae0b1;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.cardsMain strong {
+  color: #f3b43f;
+}
+
+.cardsIcon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #4d1cb0;
+}
+
+.cardsText {
+  color: #404040;
 }
