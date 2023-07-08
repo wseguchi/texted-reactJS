@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Content.module.css';
 import imgBgRightYellowCircle from '../../assets/img-bg-right-yellow-circle.svg';
+import { FiExternalLink } from 'react-icons/fi';
 
 const Method = () => {
   return (
@@ -52,7 +53,7 @@ const Method = () => {
                   href="https://centerforplainlanguage.org/what-is-readability/#:~:text=U.S.%20illiteracy%20statistics%20from%20the,guidelines%20in%20the%20medical%20industry"
                   target="_blank"
                 >
-                  <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                  <FiExternalLink className={styles.methodIcon} />
                 </a>
               </p>
               <p>
@@ -71,7 +72,7 @@ const Method = () => {
                   target="_blank"
                   title="Learn More"
                 >
-                  <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                  <FiExternalLink className={styles.methodIcon} />
                 </a>
               </p>
               <p>
@@ -99,7 +100,7 @@ const Method = () => {
                   target="_blank"
                   title="Learn More"
                 >
-                  <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                  <FiExternalLink className={styles.methodIcon} />
                 </a>
               </p>
             </div>
@@ -120,7 +121,7 @@ const Method = () => {
                   target="_blank"
                   title="Learn More"
                 >
-                  <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                  <FiExternalLink className={styles.methodIcon} />
                 </a>
               </p>
               <p>

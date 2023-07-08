@@ -131,6 +131,7 @@
   font-size: 1.2em;
 }
 
-.subtitle {
-  font-size: 0.8em;
+.methodIcon {
+  position: relative;
+  top: 2px;
 }
