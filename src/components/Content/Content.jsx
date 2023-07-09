@@ -3,8 +3,7 @@ import styles from './Content.module.css';
 import Cards from './Cards';
 import TextInput from './TextInput';
 import Method from './Method';
-import About from './About';
-import Contact from './Contact';
+import AboutAndContentContainer from './AboutAndContentContainer';
 
 const Content = () => {
   return (
@@ -12,8 +11,7 @@ const Content = () => {
       <Cards />
       <TextInput />
       <Method />
-      <About />
-      <Contact />
+      <AboutAndContentContainer />
     </section>
   );
 };
