@@ -1,13 +1,13 @@
 import React from 'react';
+import styles from './Content.module.css';
 
 const Contact = () => {
   return (
     <div id="contact">
-      <div id="contact-title">
-        <div id="contact-title-text">Contact</div>
-      </div>
-      <h2>Don't hesitate to contact us for any information.</h2>
-      <div className="container">
+      <div className={styles.aboutContactTitle}>Contact</div>
+      <div className={styles.aboutContactText}>
+        <h2>Don't hesitate to contact us for any information.</h2>
+        {/* <div className="container">
         <form
           action="https://formsubmit.co/c079bc6b15f2648eb285640c8308be3a"
           method="POST"
@@ -49,6 +49,7 @@ const Contact = () => {
             </button>
           </div>
         </form>
+      </div> */}
       </div>
     </div>
   );

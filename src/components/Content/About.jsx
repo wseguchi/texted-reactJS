@@ -1,70 +1,68 @@
 import React from 'react';
+import styles from './Content.module.css';
+import { FaReact, FaHtml5, FaCss3Alt, FaSquareGithub } from 'react-icons/fa6';
+import { RiJavascriptFill } from 'react-icons/ri';
+import { FiExternalLink } from 'react-icons/fi';
 
 const About = () => {
   return (
-    <div>
-      <div id="about" className="width-restrainer">
-        <div id="about-title">About</div>
-        <div id="about-text">
-          <h2>
-            Text(ed) is a web-based application that evaluates the readability
-            and similarity of a text.
-          </h2>
+    <div id="about">
+      <div className={styles.aboutContactTitle}>About</div>
+      <div className={styles.aboutContactText}>
+        <h2>
+          Text(ed) is a web-based application that evaluates the readability and
+          similarity of a text.
+        </h2>
+        <p>
+          The project was inspired by a problem set called "Readability"
+          presented by the{' '}
+          <a
+            href="https://cs50.harvard.edu/x/"
+            target="_blank"
+            title="Learn More"
+          >
+            CS50's program
+          </a>{' '}
+          in weeks 2 and 6.
+        </p>
+        <p>The application was built with the following technologies:</p>
+        <div className={styles.aboutIconsDiv}>
+          <div className={styles.aboutIconsText}>
+            <FaReact className={styles.aboutIcons} />
+            <div>React and Redux</div>
+          </div>
+          <div className={styles.aboutIconsText}>
+            <RiJavascriptFill className={styles.aboutIcons} />
+            <div>JavaScript</div>
+          </div>
+          <div className={styles.aboutIconsText}>
+            <FaHtml5 className={styles.aboutIcons} />
+            <div>HTML 5</div>
+          </div>
+          <div className={styles.aboutIconsText}>
+            <FaCss3Alt className={styles.aboutIcons} />
+            <div>CSS 3</div>
+          </div>
+          <div
+            id="about-tech-icons-github"
+            className={`${styles.aboutIconsText} ${styles.aboutIconsGithub}`}
+            onClick="window.open('https://github.com/wseguchi/texted')"
+          >
+            <FaSquareGithub className={styles.aboutIcons} />
+            <div>View Github Repository</div>
+          </div>
+        </div>
+        <div className={styles.aboutLicense}>
           <p>
-            The project was inspired by a problem set called "Readability"
-            presented by the{' '}
+            MIT License
             <a
-              href="https://cs50.harvard.edu/x/"
+              href="https://opensource.org/licenses/MIT"
               target="_blank"
               title="Learn More"
             >
-              CS50's program
-            </a>{' '}
-            in weeks 2 and 6.
+              <FiExternalLink className={styles.aboutIconsLicense} />
+            </a>
           </p>
-          <p>The application was built with the following technologies:</p>
-          <div id="about-tech-icons">
-            <div className="about-tech-icons-text">
-              <i className="fa-brands fa-python"></i>
-              <div>Python and Flask</div>
-            </div>
-            <div className="about-tech-icons-text">
-              <i className="fa-brands fa-js-square"></i>
-              <div>JavaScript and JQuery</div>
-            </div>
-            <div className="about-tech-icons-text">
-              <i className="fa-brands fa-html5"></i>
-              <div>HTML 5</div>
-            </div>
-            <div className="about-tech-icons-text">
-              <i className="fa-brands fa-css3-alt"></i>
-              <div>CSS 3</div>
-            </div>
-            <div className="about-tech-icons-text">
-              <i className="fa-brands fa-square-font-awesome"></i>
-              <div>Font Awesome</div>
-            </div>
-            <div
-              id="about-tech-icons-github"
-              className="about-tech-icons-text"
-              onclick="window.open('https://github.com/wseguchi/texted')"
-            >
-              <i className="fa-brands fa-github-square"></i>
-              <div>View Github Repository</div>
-            </div>
-          </div>
-          <div id="license">
-            <p className="text-align-center">
-              MIT License{' '}
-              <a
-                href="https://opensource.org/licenses/MIT"
-                target="_blank"
-                title="Learn More"
-              >
-                <i className="fa-solid fa-arrow-up-right-from-square"></i>
-              </a>
-            </p>
-          </div>
         </div>
       </div>
     </div>

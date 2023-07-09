@@ -47,11 +47,22 @@ button {
   align-items: center;
 }
 
+#about-and-content-container-bg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url('../src/assets/img-about-contact-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 #about-and-content-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 10rem;
   justify-content: center;
   align-items: center;
+  padding: 3rem 0;
 }
 
 /* global classes */
@@ -103,6 +114,45 @@ button {
 
 .btn-yellow:hover {
   background-color: #00fbff;
+}
+
+/* Forms */
+
+/* CONTACT form */
+
+input[type='text'],
+input[type='email'],
+select,
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: 'Inconsolata', monospace;
+  font-size: 1em;
+  font-weight: 300;
+  color: #404040;
+  box-shadow: 0px 0px 50px #ebebf9;
+}
+
+.container {
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.container label {
+  display: none;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #999;
+  font-size: 0.7em;
+  top: 9px;
+  left: 20px;
+  background-color: white;
+  padding: 0px 5px;
 }
 
 /* Temporary */
