@@ -60,9 +60,7 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10rem;
-  justify-content: center;
-  align-items: center;
-  padding: 3rem 0;
+  padding: 1rem 0 3rem 0;
 }
 
 /* global classes */
@@ -118,8 +116,6 @@ button {
 
 /* Forms */
 
-/* CONTACT form */
-
 input[type='text'],
 input[type='email'],
 select,
@@ -153,6 +149,10 @@ textarea {
   left: 20px;
   background-color: white;
   padding: 0px 5px;
+}
+
+textarea#subject {
+  height: 160px;
 }
 
 /* Temporary */
