@@ -45,7 +45,7 @@ const TextInput = () => {
                   className="input-selector border-radius-right"
                   onclick="selectMode('similarity')"
                 >
-                  <strong>READABILITY & SIMILARITY</strong>
+                  {/* <strong>READABILITY & SIMILARITY</strong>
                   <span className="subtitle">between two texts</span>
                 </div>
               </div>
@@ -60,7 +60,7 @@ const TextInput = () => {
               <div id="warning-identical-texts" className="warning mb">
                 <i className="fa-solid fa-person-falling-burst"></i> Oh...
                 Identical texts! Please input different texts.
-              </div>
+              </div> */}
               <form
                 action="/result"
                 method="post"
