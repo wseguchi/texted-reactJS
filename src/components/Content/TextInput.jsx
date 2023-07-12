@@ -35,7 +35,7 @@ const TextInput = () => {
                 <div
                   id="main-input-selector-options-readability"
                   className="input-selector border-right border-radius-left"
-                  onclick="selectMode('readability')"
+                  // onClick="selectMode('readability')"
                 >
                   <strong>READABILITY</strong>
                   <span className="subtitle">of one text</span>
@@ -43,9 +43,9 @@ const TextInput = () => {
                 <div
                   id="main-input-selector-options-similarity"
                   className="input-selector border-radius-right"
-                  onclick="selectMode('similarity')"
+                  // onClick="selectMode('similarity')"
                 >
-                  {/* <strong>READABILITY & SIMILARITY</strong>
+                  <strong>READABILITY & SIMILARITY</strong>
                   <span className="subtitle">between two texts</span>
                 </div>
               </div>
@@ -60,11 +60,11 @@ const TextInput = () => {
               <div id="warning-identical-texts" className="warning mb">
                 <i className="fa-solid fa-person-falling-burst"></i> Oh...
                 Identical texts! Please input different texts.
-              </div> */}
+              </div>
               <form
                 action="/result"
                 method="post"
-                onsubmit="return checkSubmitFunction()"
+                // onSubmit="return checkSubmitFunction()"
               />
               <div id="main-input-text">
                 <div id="main-input-textbox-1">

@@ -15,7 +15,7 @@ const Method = () => {
             <div
               id="method-title-readability"
               className="mt mt-active"
-              onclick="changeMethodVisibility('readability')"
+              // onClick="changeMethodVisibility('readability')"
             >
               <h1>
                 (
@@ -28,7 +28,7 @@ const Method = () => {
             <div
               id="method-title-similarity"
               className="mt mt-inactive"
-              onclick="changeMethodVisibility('similarity')"
+              // onClick="changeMethodVisibility('similarity')"
             >
               <h1>
                 (

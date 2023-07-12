@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <section id="footer" className={styles.footer}>
       <div className={`${styles.footerContent} width-restrainer`}>
-        <div className={styles.footerLogo} onclick="pageScroll('#header')">
+        <div className={styles.footerLogo}>
           text(<span className={styles.ed}>ed</span>)
         </div>
         <div className={styles.footerCopyright}>

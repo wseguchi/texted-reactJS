@@ -46,7 +46,7 @@ const About = () => {
           <div
             id="about-tech-icons-github"
             className={`${styles.aboutIconsText} ${styles.aboutIconsGithub}`}
-            onClick="window.open('https://github.com/wseguchi/texted')"
+            // onClick="window.open('https://github.com/wseguchi/texted')"
           >
             <FaSquareGithub className={styles.aboutIcons} />
             <div>View Github Repository</div>
