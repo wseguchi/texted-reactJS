@@ -15,7 +15,8 @@ const Cards = () => {
           maximize your audience readership.
         </h3>
       </div>
-      <div>
+      {/* Similarity */}
+      {/* <div>
         <FaCopy className={styles.cardsIcon} />
         <h1>
           (<span className="strong-purple">similar</span>)ity
@@ -24,7 +25,7 @@ const Cards = () => {
           Check <strong>similarity</strong> to avoid redundancies and
           plagiarism.
         </h3>
-      </div>
+      </div> */}
     </div>
   );
 };
